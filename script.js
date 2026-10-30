@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Seleccionamos todos los botones de compra usando la clase
-  const botonesComprar = document.querySelectorAll(".producto_boton");
+  const botonesComprar = document.querySelectorAll(".producto__boton");
 
   botonesComprar.forEach(boton => {
     boton.addEventListener("click", (e) => {
