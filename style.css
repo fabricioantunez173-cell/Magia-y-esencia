@@ -636,10 +636,10 @@ button {
     justify-content: center;
   }
 }
-/* Estilo limpio y elevado para el botón flotante de WhatsApp */
+/* Botón flotante de WhatsApp limpio y sin cuadrados */
 .whatsapp-flotante {
   position: fixed;
-  bottom: 85px; /* Lo subimos para que no choque con la barra de Netlify */
+  bottom: 85px;
   right: 20px;
   background-color: #25d366;
   color: #fff;
@@ -650,8 +650,8 @@ button {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-  z-index: 9999; /* Asegura que flote por encima de todo */
-  overflow: hidden; /* Evita cualquier cuadrado o desborde */
+  z-index: 9999;
+  text-decoration: none;
   transition: transform 0.2s ease;
 }
 
@@ -659,9 +659,9 @@ button {
   transform: scale(1.1);
 }
 
-.whatsapp-flotante img {
+/* Estilo para el ícono de texto SVG interno */
+.whatsapp-flotante svg {
   width: 32px;
   height: 32px;
-  object-fit: contain;
-  display: block;
+  fill: #ffffff;
 }
