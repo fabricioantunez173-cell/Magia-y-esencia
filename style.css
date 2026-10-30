@@ -636,3 +636,28 @@ button {
     justify-content: center;
   }
 }
+/* Estilo para el botón flotante de WhatsApp */
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  transition: transform 0.2s ease;
+}
+.whatsapp-flotante:hover {
+  transform: scale(1.1);
+}
+.whatsapp-flotante img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
