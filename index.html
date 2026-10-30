@@ -154,7 +154,7 @@
             <figure class="producto__imagen">
               <img
                 src="images/osito-rosa-dentro-de-vela.jpg"
-                alt="Vela artesanal con osito rosa dentro sobre bandeja"
+                alt="osito rosa dentro de flor de loto "
                 loading="lazy"
               />
               <span class="producto__etiqueta">Cera de Soja 100% Natural</span>
@@ -164,13 +164,11 @@
               <h3>Osito Rosa Aromático dentro de flor de loto</h3>
               <p class="producto__meta">157 g • Tiempo de quema: ~50 hrs</p>
               <p class="producto__descripcion">
-                ✨ Productos únicos
-                ✨ Hechos con dedicación
-                ✨ Ideales para regalar.
+                Productos únicos, Hechos con dedicación ,Ideales para regalar.
               </p>
               <div class="producto__acciones">
                 <span class="producto__precio">$8500</span>
-                <button type="button" class="producto__boton" onclick="comprarProducto('Osito Rosa Aromático', 'images/vela-oso-rosa.jpg', 'https://magia-y-esencia.netlify.app/images/vela-oso-rosa.jpg')">Comprar</button>
+                <button type="button" class="producto__boton" onclick="comprarProducto('Osito Rosa Dentro de Flor de Loto', 'images/osito-rosa-dentro-de-flor-vela.jpg', 'https://magia-y-esencia.netlify.app/images/osito-rosa-dentro-de-flor-vela.jpg')">Comprar</button>
               </div>
             </div>
           </article>
@@ -179,7 +177,7 @@
             <figure class="producto__imagen">
               <img
                 src="images/osito-dorado-dentro-de-flor-vela.jpg"
-                alt="osito dorado dentro de flor de loto sobre bandeja"
+                alt="osito dorado dentro de flor de loto"
                 loading="lazy"
               />
               <span class="producto__etiqueta">Cera de Soja 100% Natural</span>
@@ -188,14 +186,13 @@
             <div class="producto__contenido">
               <h3>Osito Dorado Aromático dentro de flor de loto</h3>
               <p class="producto__meta">157 g • Tiempo de quema: ~50 hrs</p>
-              <p class="producto__descripcion">
-                ✨ Productos únicos
-                ✨ Hechos con dedicación
-                ✨ Ideales para regalar.
+              <p class="producto__descripcion"> 
+                 Productos únicos, Hechos con dedicación
+                 Ideales para regalar.
               </p>
               <div class="producto__acciones">
                 <span class="producto__precio">$8500</span>
-                <button type="button" class="producto__boton" onclick="comprarProducto('Osito Dorado Aromático', 'images/vela-oso-dorado.jpg', 'https://magia-y-esencia.netlify.app/images/vela-oso-dorado.jpg')">Comprar</button>
+                <button type="button" class="producto__boton" onclick="comprarProducto('Osito Dorado Aromático', 'images/osito-dorado-dentro-de-flor-vela.jpg', 'https://magia-y-esencia.netlify.app/images/osito-dorado-dentro-de-flor-vela.jpg')">Comprar</button>
               </div>
             </div>
           </article>
@@ -312,7 +309,8 @@
     <script>
   function comprarProducto(nombre, urlImagen) {
     const telefono = "5493816641686"; 
-    const mensaje = `¡Hola! Me interesa este producto 😁: *${nombre}*.\n\nAquí puedes ver la imagen:\n${urlImagen}`;
+    // La foto va primero para que WhatsApp genere la tarjeta arriba, y el mensaje abajo
+    const mensaje = `${urlImagen}\n\n¡Hola! Me interesa este producto 😁: *${nombre}*`;
     const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     
     window.location.href = urlWhatsApp;
