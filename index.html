@@ -309,9 +309,8 @@
     <script>
   function comprarProducto(nombre, urlImagen) {
     const telefono = "5493816641686"; 
-    // La foto va primero para que WhatsApp genere la tarjeta arriba, y el mensaje abajo
-    const mensaje = `${urlImagen}\n\n¡Hola! Me interesa este producto 😁: *${nombre}*`;
-    const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    const textoMensaje = urlImagen + "\n\n¡Hola! Me interesa este producto 😁: *" + nombre + "*";
+    const urlWhatsApp = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(textoMensaje);
     
     window.location.href = urlWhatsApp;
   }
